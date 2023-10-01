@@ -1,0 +1,17 @@
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\bin\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.exe
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\bin\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.deps.json
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\bin\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.runtimeconfig.json
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\bin\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.dll
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\bin\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.pdb
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.Form1.resources
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.Properties.Resources.resources
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.AssemblyInfo.cs
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.dll
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\refint\ChuongTrinhDatVeXemPhim.dll
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.pdb
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.genruntimeconfig.cache
+C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ref\ChuongTrinhDatVeXemPhim.dll
