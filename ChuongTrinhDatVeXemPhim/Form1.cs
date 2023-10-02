@@ -12,18 +12,18 @@ namespace ChuongTrinhDatVeXemPhim
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            loadSeet();
+            loadSeetNormal();
+            loadSeetVIP();
+            loadSeetSweetBox();
         }
 
-        private void loadSeet()
+        private void loadSeetNormal()
         {
-            for (char row = 'A'; row <= 'K'; row++)
+            for (char row = 'A'; row <= 'D'; row++)
             {
-                if (row == 'I')
-                {
-                    continue;
-                }
-                int totalSeatsInRow = (row == 'K') ? 15 : 13;
+                int totalSeatsInRow = 13;
+
+                // Đặt ColumnCount cho tableLayoutPanelGhe dựa trên tổng số ghế trong hàng này
 
                 for (int seatNum = 1; seatNum <= totalSeatsInRow; seatNum++)
                 {
@@ -33,17 +33,82 @@ namespace ChuongTrinhDatVeXemPhim
                     seatButton.Name = seatName;
                     seatButton.Text = seatName;
                     seatButton.Width = 50; // Điều chỉnh kích thước của ghế tùy ý
-                    seatButton.Height = 30;
+                    seatButton.Height = 50;
+                    seatButton.FlatStyle = FlatStyle.Flat;
+                    seatButton.FlatAppearance.BorderColor = Color.Green;
+                    seatButton.FlatAppearance.BorderSize = 2;
+                    seatButton.Click += SeatButton_Click; // Gắn sự kiện click cho ghế
+                    
+
+                    tableLayoutPanelGheNormal.Controls.Add(seatButton); // Thêm ghế vào TableLayoutPanel
+                }
+            }
+        }
+        private void loadSeetVIP()
+        {
+            for (char row = 'E'; row <= 'J'; row++)
+            {
+                if (row == 'I')
+                {
+                    continue;
+                }
+                int totalSeatsInRow = 13;
+
+                // Đặt ColumnCount cho tableLayoutPanelGhe dựa trên tổng số ghế trong hàng này
+
+                for (int seatNum = 1; seatNum <= totalSeatsInRow; seatNum++)
+                {
+                    string seatName = row + seatNum.ToString(); // Tạo tên ghế, ví dụ: "A1", "B2",...
+
+                    Button seatButton = new Button();
+                    seatButton.Name = seatName;
+                    seatButton.Text = seatName;
+                    seatButton.Width = 50; // Điều chỉnh kích thước của ghế tùy ý
+                    seatButton.Height = 50;
+                    seatButton.FlatStyle = FlatStyle.Flat;
+                    seatButton.FlatAppearance.BorderColor = Color.Red;
+                    seatButton.FlatAppearance.BorderSize = 2;
                     seatButton.Click += SeatButton_Click; // Gắn sự kiện click cho ghế
 
-                    tableLayoutPanelGhe.Controls.Add(seatButton); // Thêm ghế vào TableLayoutPanel
+                    tableLayoutPanelGheVIP.Controls.Add(seatButton); // Thêm ghế vào TableLayoutPanel
                 }
+            }
+        }
+        private void loadSeetSweetBox()
+        {
+            int totalSeatsInRow = 15;
+
+            // Đặt ColumnCount cho tableLayoutPanelGhe dựa trên tổng số ghế trong hàng này
+
+            for (int seatNum = 1; seatNum <= totalSeatsInRow; seatNum++)
+            {
+                string seatName = 'K' + seatNum.ToString(); // Tạo tên ghế, ví dụ: "A1", "B2",...
+
+                Button seatButton = new Button();
+                seatButton.Name = seatName;
+                seatButton.Text = seatName;
+                seatButton.Width = 50; // Điều chỉnh kích thước của ghế tùy ý
+                seatButton.Height = 50;
+                seatButton.BackColor = Color.LightPink;
+                seatButton.FlatStyle = FlatStyle.Flat;
+                seatButton.FlatAppearance.BorderSize = 0;
+                seatButton.Click += SeatButton_Click; // Gắn sự kiện click cho ghế
+                
+
+                tableLayoutPanelGheSweetBox.Controls.Add(seatButton); // Thêm ghế vào TableLayoutPanel
             }
         }
         //thực hiện khi click vào ghế ở đây
         private void SeatButton_Click(object? sender, EventArgs e)
         {
-
+            Button seatButton = sender as Button;
+            if (seatButton != null)
+            {
+                seatButton.FlatStyle = FlatStyle.Flat;
+                seatButton.FlatAppearance.BorderSize = 0;
+                seatButton.Text = "";
+                seatButton.BackColor = Color.DarkRed;
+            }
         }
 
         /*

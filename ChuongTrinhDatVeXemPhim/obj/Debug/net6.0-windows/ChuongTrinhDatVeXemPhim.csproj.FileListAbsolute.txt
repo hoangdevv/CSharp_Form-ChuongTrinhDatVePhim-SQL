@@ -15,3 +15,20 @@ C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Deb
 C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.pdb
 C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.genruntimeconfig.cache
 C:\Users\PC\source\repos\ChuongTrinhDatVeXemPhim\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ref\ChuongTrinhDatVeXemPhim.dll
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\bin\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.exe
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\bin\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.deps.json
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\bin\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.runtimeconfig.json
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\bin\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.dll
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\bin\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.pdb
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.Form1.resources
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.Properties.Resources.resources
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.csproj.GenerateResource.cache
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.AssemblyInfoInputs.cache
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.AssemblyInfo.cs
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.csproj.CoreCompileInputs.cache
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.dll
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\refint\ChuongTrinhDatVeXemPhim.dll
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.pdb
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ChuongTrinhDatVeXemPhim.genruntimeconfig.cache
+D:\Code\Winform C#\CSharp_Form-ChuongTrinhDatVePhim-SQL\ChuongTrinhDatVeXemPhim\obj\Debug\net6.0-windows\ref\ChuongTrinhDatVeXemPhim.dll

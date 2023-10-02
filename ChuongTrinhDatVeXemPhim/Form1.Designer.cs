@@ -32,11 +32,9 @@
             panel1 = new Panel();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            tableLayoutPanelGhe = new TableLayoutPanel();
+            tableLayoutPanelGheNormal = new TableLayoutPanel();
             panel2 = new Panel();
             label8 = new Label();
-            panel3 = new Panel();
-            panel4 = new Panel();
             panel5 = new Panel();
             btnThanhTan = new Button();
             label5 = new Label();
@@ -45,6 +43,8 @@
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
+            tableLayoutPanelGheVIP = new TableLayoutPanel();
+            tableLayoutPanelGheSweetBox = new TableLayoutPanel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -57,8 +57,9 @@
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(963, 34);
+            panel1.Size = new Size(1101, 45);
             panel1.TabIndex = 0;
             // 
             // label1
@@ -67,7 +68,7 @@
             label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(963, 34);
+            label1.Size = new Size(1101, 45);
             label1.TabIndex = 0;
             label1.Text = "NGƯỜI / GHẾ";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -78,52 +79,55 @@
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Dock = DockStyle.Top;
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(0, 34);
+            pictureBox1.Location = new Point(0, 45);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(963, 39);
+            pictureBox1.Size = new Size(1101, 52);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // tableLayoutPanelGhe
+            // tableLayoutPanelGheNormal
             // 
-            tableLayoutPanelGhe.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanelGhe.ColumnCount = 13;
-            tableLayoutPanelGhe.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266224F));
-            tableLayoutPanelGhe.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
-            tableLayoutPanelGhe.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
-            tableLayoutPanelGhe.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
-            tableLayoutPanelGhe.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
-            tableLayoutPanelGhe.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
-            tableLayoutPanelGhe.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
-            tableLayoutPanelGhe.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
-            tableLayoutPanelGhe.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
-            tableLayoutPanelGhe.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
-            tableLayoutPanelGhe.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
-            tableLayoutPanelGhe.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.6903553F));
-            tableLayoutPanelGhe.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.6903553F));
-            tableLayoutPanelGhe.Location = new Point(154, 114);
-            tableLayoutPanelGhe.Name = "tableLayoutPanelGhe";
-            tableLayoutPanelGhe.RowCount = 10;
-            tableLayoutPanelGhe.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanelGhe.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanelGhe.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanelGhe.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanelGhe.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanelGhe.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanelGhe.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanelGhe.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanelGhe.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanelGhe.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanelGhe.Size = new Size(674, 324);
-            tableLayoutPanelGhe.TabIndex = 0;
+            tableLayoutPanelGheNormal.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanelGheNormal.ColumnCount = 13;
+            tableLayoutPanelGheNormal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266224F));
+            tableLayoutPanelGheNormal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheNormal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheNormal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheNormal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheNormal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheNormal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheNormal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheNormal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheNormal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheNormal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheNormal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.6903553F));
+            tableLayoutPanelGheNormal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.6903553F));
+            tableLayoutPanelGheNormal.Location = new Point(176, 152);
+            tableLayoutPanelGheNormal.Margin = new Padding(3, 4, 3, 4);
+            tableLayoutPanelGheNormal.Name = "tableLayoutPanelGheNormal";
+            tableLayoutPanelGheNormal.RowCount = 4;
+            tableLayoutPanelGheNormal.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheNormal.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheNormal.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheNormal.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheNormal.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheNormal.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheNormal.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheNormal.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheNormal.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheNormal.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheNormal.Size = new Size(780, 160);
+            tableLayoutPanelGheNormal.TabIndex = 0;
             // 
             // panel2
             // 
             panel2.Controls.Add(label8);
             panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 73);
+            panel2.Location = new Point(0, 97);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(963, 41);
+            panel2.Size = new Size(1101, 55);
             panel2.TabIndex = 2;
             // 
             // label8
@@ -132,26 +136,10 @@
             label8.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label8.Location = new Point(0, 0);
             label8.Name = "label8";
-            label8.Size = new Size(963, 41);
+            label8.Size = new Size(1101, 55);
             label8.TabIndex = 0;
             label8.Text = "SCREEN";
             label8.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // panel3
-            // 
-            panel3.Dock = DockStyle.Left;
-            panel3.Location = new Point(0, 114);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(154, 424);
-            panel3.TabIndex = 3;
-            // 
-            // panel4
-            // 
-            panel4.Dock = DockStyle.Right;
-            panel4.Location = new Point(828, 114);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(135, 424);
-            panel4.TabIndex = 4;
             // 
             // panel5
             // 
@@ -163,17 +151,19 @@
             panel5.Controls.Add(label3);
             panel5.Controls.Add(label2);
             panel5.Dock = DockStyle.Bottom;
-            panel5.Location = new Point(154, 438);
+            panel5.Location = new Point(0, 584);
+            panel5.Margin = new Padding(3, 4, 3, 4);
             panel5.Name = "panel5";
-            panel5.Size = new Size(674, 100);
+            panel5.Size = new Size(1101, 133);
             panel5.TabIndex = 5;
             // 
             // btnThanhTan
             // 
             btnThanhTan.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnThanhTan.Location = new Point(512, 35);
+            btnThanhTan.Location = new Point(916, 47);
+            btnThanhTan.Margin = new Padding(3, 4, 3, 4);
             btnThanhTan.Name = "btnThanhTan";
-            btnThanhTan.Size = new Size(113, 36);
+            btnThanhTan.Size = new Size(129, 48);
             btnThanhTan.TabIndex = 4;
             btnThanhTan.Text = "Thanh toán";
             btnThanhTan.UseVisualStyleBackColor = true;
@@ -181,71 +171,142 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(318, 14);
+            label5.Location = new Point(411, 25);
             label5.Name = "label5";
-            label5.Size = new Size(38, 15);
+            label5.Size = new Size(60, 20);
             label5.TabIndex = 1;
-            label5.Text = "label2";
+            label5.Text = "Thường";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(318, 71);
+            label6.Location = new Point(411, 101);
             label6.Name = "label6";
-            label6.Size = new Size(38, 15);
+            label6.Size = new Size(74, 20);
             label6.TabIndex = 2;
-            label6.Text = "label2";
+            label6.Text = "SweetBox";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(318, 43);
+            label7.Location = new Point(411, 61);
             label7.Name = "label7";
-            label7.Size = new Size(38, 15);
+            label7.Size = new Size(78, 20);
             label7.TabIndex = 3;
-            label7.Text = "label7";
+            label7.Text = "VIP(Prime)";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(110, 19);
+            label4.Location = new Point(126, 25);
             label4.Name = "label4";
-            label4.Size = new Size(38, 15);
+            label4.Size = new Size(65, 20);
             label4.TabIndex = 0;
-            label4.Text = "label2";
+            label4.Text = "Checked";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(110, 76);
+            label3.Location = new Point(126, 101);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(113, 20);
             label3.TabIndex = 0;
-            label3.Text = "label2";
+            label3.Text = "Không thể chọn";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(110, 48);
+            label2.Location = new Point(126, 61);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(64, 20);
             label2.TabIndex = 0;
-            label2.Text = "label2";
+            label2.Text = "Đã chọn";
+            // 
+            // tableLayoutPanelGheVIP
+            // 
+            tableLayoutPanelGheVIP.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanelGheVIP.ColumnCount = 13;
+            tableLayoutPanelGheVIP.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266224F));
+            tableLayoutPanelGheVIP.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheVIP.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheVIP.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheVIP.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheVIP.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheVIP.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheVIP.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheVIP.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheVIP.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheVIP.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266272F));
+            tableLayoutPanelGheVIP.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.6903553F));
+            tableLayoutPanelGheVIP.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.6903553F));
+            tableLayoutPanelGheVIP.Location = new Point(176, 320);
+            tableLayoutPanelGheVIP.Margin = new Padding(3, 4, 3, 4);
+            tableLayoutPanelGheVIP.Name = "tableLayoutPanelGheVIP";
+            tableLayoutPanelGheVIP.RowCount = 5;
+            tableLayoutPanelGheVIP.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheVIP.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheVIP.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheVIP.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheVIP.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheVIP.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheVIP.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheVIP.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheVIP.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheVIP.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheVIP.Size = new Size(780, 200);
+            tableLayoutPanelGheVIP.TabIndex = 6;
+            // 
+            // tableLayoutPanelGheSweetBox
+            // 
+            tableLayoutPanelGheSweetBox.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanelGheSweetBox.ColumnCount = 15;
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69266224F));
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69230747F));
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69230747F));
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69230747F));
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.820513F));
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.69230747F));
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.56410265F));
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.56410265F));
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.820513F));
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.820513F));
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.948718F));
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.179487F));
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.820513F));
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 59F));
+            tableLayoutPanelGheSweetBox.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 54F));
+            tableLayoutPanelGheSweetBox.Location = new Point(116, 528);
+            tableLayoutPanelGheSweetBox.Margin = new Padding(3, 4, 3, 4);
+            tableLayoutPanelGheSweetBox.Name = "tableLayoutPanelGheSweetBox";
+            tableLayoutPanelGheSweetBox.RowCount = 1;
+            tableLayoutPanelGheSweetBox.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheSweetBox.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheSweetBox.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheSweetBox.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheSweetBox.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheSweetBox.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheSweetBox.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheSweetBox.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheSweetBox.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheSweetBox.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanelGheSweetBox.Size = new Size(900, 40);
+            tableLayoutPanelGheSweetBox.TabIndex = 7;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.LightYellow;
-            ClientSize = new Size(963, 538);
-            Controls.Add(tableLayoutPanelGhe);
+            ClientSize = new Size(1101, 717);
+            Controls.Add(tableLayoutPanelGheSweetBox);
+            Controls.Add(tableLayoutPanelGheVIP);
+            Controls.Add(tableLayoutPanelGheNormal);
             Controls.Add(panel5);
-            Controls.Add(panel4);
-            Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -262,11 +323,9 @@
         private Panel panel1;
         private Label label1;
         private PictureBox pictureBox1;
-        private TableLayoutPanel tableLayoutPanelGhe;
+        private TableLayoutPanel tableLayoutPanelGheNormal;
         private Panel panel2;
         private Label label8;
-        private Panel panel3;
-        private Panel panel4;
         private Panel panel5;
         private Button btnThanhTan;
         private Label label5;
@@ -275,5 +334,7 @@
         private Label label4;
         private Label label3;
         private Label label2;
+        private TableLayoutPanel tableLayoutPanelGheVIP;
+        private TableLayoutPanel tableLayoutPanelGheSweetBox;
     }
 }
