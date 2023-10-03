@@ -4,6 +4,7 @@ namespace ChuongTrinhDatVeXemPhim
 {
     public partial class Form1 : Form
     {
+        bool isSeat = false;
         public Form1()
         {
             InitializeComponent();
@@ -12,12 +13,12 @@ namespace ChuongTrinhDatVeXemPhim
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            loadSeetNormal();
-            loadSeetVIP();
-            loadSeetSweetBox();
+            loadSeatNormal();
+            loadSeatVIP();
+            loadSeatSweetBox();
         }
 
-        private void loadSeetNormal()
+        private void loadSeatNormal()
         {
             for (char row = 'A'; row <= 'D'; row++)
             {
@@ -35,16 +36,18 @@ namespace ChuongTrinhDatVeXemPhim
                     seatButton.Width = 50; // Điều chỉnh kích thước của ghế tùy ý
                     seatButton.Height = 50;
                     seatButton.FlatStyle = FlatStyle.Flat;
+                    seatButton.BackColor = Color.LightYellow;
                     seatButton.FlatAppearance.BorderColor = Color.Green;
                     seatButton.FlatAppearance.BorderSize = 2;
                     seatButton.Click += SeatButton_Click; // Gắn sự kiện click cho ghế
                     
 
                     tableLayoutPanelGheNormal.Controls.Add(seatButton); // Thêm ghế vào TableLayoutPanel
+                    isSeat = false;
                 }
             }
         }
-        private void loadSeetVIP()
+        private void loadSeatVIP()
         {
             for (char row = 'E'; row <= 'J'; row++)
             {
@@ -66,15 +69,18 @@ namespace ChuongTrinhDatVeXemPhim
                     seatButton.Width = 50; // Điều chỉnh kích thước của ghế tùy ý
                     seatButton.Height = 50;
                     seatButton.FlatStyle = FlatStyle.Flat;
+                    seatButton.BackColor = Color.LightYellow;
                     seatButton.FlatAppearance.BorderColor = Color.Red;
                     seatButton.FlatAppearance.BorderSize = 2;
                     seatButton.Click += SeatButton_Click; // Gắn sự kiện click cho ghế
 
+
                     tableLayoutPanelGheVIP.Controls.Add(seatButton); // Thêm ghế vào TableLayoutPanel
+                    isSeat = false;
                 }
             }
         }
-        private void loadSeetSweetBox()
+        private void loadSeatSweetBox()
         {
             int totalSeatsInRow = 15;
 
@@ -93,28 +99,45 @@ namespace ChuongTrinhDatVeXemPhim
                 seatButton.FlatStyle = FlatStyle.Flat;
                 seatButton.FlatAppearance.BorderSize = 0;
                 seatButton.Click += SeatButton_Click; // Gắn sự kiện click cho ghế
-                
+
+
 
                 tableLayoutPanelGheSweetBox.Controls.Add(seatButton); // Thêm ghế vào TableLayoutPanel
+                isSeat = true;
             }
         }
         //thực hiện khi click vào ghế ở đây
+
         private void SeatButton_Click(object? sender, EventArgs e)
         {
-            Button seatButton = sender as Button;
-            if (seatButton != null)
+            if (sender is Button seatButton) // Kiểm tra và chuyển đổi sender thành Button
             {
-                seatButton.FlatStyle = FlatStyle.Flat;
-                seatButton.FlatAppearance.BorderSize = 0;
-                seatButton.Text = "";
-                seatButton.BackColor = Color.DarkRed;
+                if (!isSeat)
+                {
+                    
+                    if (seatButton.BackColor == Color.LightPink) // Nếu là ghế SweetBox và ghế trống
+                    {
+                        seatButton.BackColor = Color.DarkRed; // Chọn ghế (đổi màu đỏ)
+                    }
+                    else if (seatButton.BackColor == Color.DarkRed) // Nếu ghế đã chọn
+                    {
+                        seatButton.BackColor = Color.LightPink; // Trở lại trạng thái ban đầu
+                    }
+                }
+                else // Nếu đang chọn ghế SweetBox
+                {
+                    if (seatButton.BackColor == Color.LightYellow) // Nếu là ghế thường và ghế trống
+                    {
+                        seatButton.BackColor = Color.DarkRed; // Chọn ghế (đổi màu đỏ)
+                    }
+                    else if (seatButton.BackColor == Color.DarkRed) // Nếu ghế đã chọn
+                    {
+                        seatButton.BackColor = Color.LightYellow; // Trở lại trạng thái ban đầu
+                    }
+                }
             }
         }
 
-        /*
-         * 1. checkout qua nhánh khác
-         * 2. đổi màu các ghế + làm lại các label ở dưới
-         * 3. thực hiện các thao tác khi click vào các ghế
-        */
+
     }
 }
